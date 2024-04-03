@@ -37,10 +37,12 @@
   --color-secondary-dark: #a18268;
 }
 /*----------------------base----------------------------*/
-* {
+*,
+*::before,
+*::after {
   box-sizing: border-box;
-  /*margin: 0;*/
-  /*padding: 0;*/
+  /* margin-bottom: 0; */
+  /* padding: 0; */
 }
 body {
   color: var(--color-primary-dark);
@@ -50,6 +52,9 @@ body {
   line-height: 1.5;
   margin: 0;
   background-color: var(--color-primary-light);
+}
+a {
+  display: inline-block;
 }
 h1,
 h2,
@@ -222,6 +227,12 @@ ul {
   font-size: 40px;
   font-weight: 600;
 }
+.chef-text p {
+  margin-bottom: 24px;
+}
+.chef-text p:last-child {
+  margin-bottom: 0;
+}
 
 .chefs-title::before,
 .chefs-title::after {
@@ -237,7 +248,25 @@ ul {
     -16px 16px 0 2px var(--color-secondary-dark);
 }
 
+.chef-list {
+  display: flex;
+  gap: 40px 30px;
+  flex-wrap: wrap;
+}
+.chef-item {
+  flex-basis: calc((100% - 30px) / 2);
+}
+
+.chef-card {
+  display: flex;
+  gap: 30px;
+}
 /*----------------------Format-section------------------------*/
+.formats-container {
+  display: flex;
+  gap: 32px;
+  align-items: center;
+}
 .formats-title {
   margin-bottom: 80px;
 }
@@ -282,6 +311,7 @@ ul {
   border-radius: 50%;
   background-color: transparent;
   border: 1px solid var(--color-primary-dark);
+  flex-shrink: 0;
 }
 .carousel-buttun:hover {
   background-color: var(--color-primary-dark);
@@ -289,10 +319,44 @@ ul {
 }
 
 /*----------------------Contacts-section----------------------*/
+
+.contact-container {
+  display: flex;
+  gap: 30px;
+}
+
+.contact-section__map {
+  flex-shrink: 0;
+  border-radius: 16px;
+}
 .contact-title {
   margin-bottom: 16px;
 }
+.contact-section {
+  padding-bottom: 96px;
+}
 /*----------------------Footer--------------------------------*/
+footer {
+  padding: 32px 0;
+}
+.footer-container {
+  display: flex;
+  gap: 20px;
+}
+.footer-nav,
+.footer-address {
+  flex-basis: 50%;
+  display: flex;
+  gap: 20px;
+}
+.footer-logo,
+.footer-menu {
+  flex-grow: 1;
+}
+.address-list,
+.adres-info {
+  flex-grow: 1;
+}
 
 .address-link {
   color: var(--color-primary-light);
