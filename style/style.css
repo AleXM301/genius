@@ -91,12 +91,12 @@ ul {
   padding: 0 24px;
 }
 
-.text-brand {
+/* .text-brand {
   color: var(--color-brand-normal);
 }
 .text-brand-dark {
   color: var(--color-brand-dark);
-}
+} */
 .accent {
   color: var(--color-brand-normal);
 }
@@ -187,6 +187,9 @@ ul {
 .section-title.centered {
   text-align: center;
 }
+.centered {
+  text-align: center;
+}
 /*----------------------Traditions----------------------------*/
 .traditions-section {
   padding-top: 96px;
@@ -215,13 +218,9 @@ ul {
 
 /*----------------------Chef-section--------------------------*/
 .chefs-title {
-  max-width: 542px;
   margin: 0 auto 80px;
+  position: relative;
 }
-/*.chefs-title::before {*/
-/*  display: block;*/
-/*  content:"" ;*/
-/*}*/
 .chef-title {
   margin-bottom: 16px;
   font-size: 40px;
@@ -236,11 +235,19 @@ ul {
 
 .chefs-title::before,
 .chefs-title::after {
-  display: block;
+  bottom: 24px;
+  position: absolute;
   width: 352px;
   height: 2px;
   border: 2px solid var(--color-brand-light);
   content: "";
+}
+.chefs-title::before {
+  left: 0;
+}
+
+.chefs-title::after {
+  right: 0;
 }
 .chef-photo {
   border-radius: 4px 4px 4px 200px;
@@ -336,8 +343,14 @@ ul {
   padding-bottom: 96px;
 }
 /*----------------------Footer--------------------------------*/
-footer {
+.footer {
   padding: 32px 0;
+  position: relative;
+  background-image: url("../img/footer-background.png");
+  background-color: var(--color-primary-dark);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 }
 .footer-container {
   display: flex;
@@ -376,10 +389,50 @@ footer {
 .address-icon:hover {
   fill: var(--color-brand-normal);
 }
-.footer {
-  background-image: url("../img/footer-background.png");
-  background-color: var(--color-primary-dark);
+.footer::before,
+.footer::after {
+  position: absolute;
+  bottom: 0;
+  content: "";
   background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
+}
+.footer::before {
+  width: 180px;
+  height: 120px;
+  background-image: url(/img/mbadvn-PhotoRoom\ 2.png);
+}
+.footer::after {
+  width: 380px;
+  height: 190px;
+  right: 0;
+  background-image: url(/img/vsbkdjvb-PhotoRoom\ 1.png);
+}
+/* -------------------- */
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+.modal {
+  width: 880px;
+  height: 880px;
+  position: relative;
+  background-color: var(--color-brand-light);
+  border-radius: 32px;
+}
+.modal-btn-close {
+  position: absolute;
+  top: 40px;
+  right: 40px;
+}
+.backdrop.is-hidden {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
 }
