@@ -236,7 +236,35 @@
               <h2 class="contact-title section-title">
                 Приєднуйся до мережі пекарень
               </h2>
-              <p>Заповни форму, щоб ми звʼязались з тобою!</p>
+              <p class="contact-text">
+                Заповни форму, щоб ми звʼязались з тобою!
+              </p>
+              <form name="modal-form" autocomplete="off" novalidate>
+                <div class="form-field">
+                  <label class="form-label" for="form-label">Имя</label>
+                  <input class="form-input" type="text" id="user-name" />
+                </div>
+
+                <div class="form-field">
+                  <label class="form-label" for="user-tel">Телефон </label>
+                  <input class="form-input"" type="tel" id="user-tel" />
+                </div>
+
+                <div class="form-field">
+                  <label class="form-label" for="user-email">Почта</label>
+                  <input class="form-input" type="email" id="user-email" />
+                </div>
+
+                <button class="form-button button" type="submit">
+                  Замовити дзвінок
+                </button>
+                <p class="form-terms">
+                  Натискаючи на кнопку я погоджуюсь з політикою конфіденційності
+                  <a class="form-terms-link" href="#"
+                    >Політикою конфіденційності</a
+                  >
+                </p>
+              </form>
             </div>
             <iframe
               class="contact-section__map"
@@ -316,6 +344,34 @@
     <div class="backdrop is-hidden">
       <div class="modal">
         <button class="modal-btn-close" type="button">Close</button>
+        <h2>Замовити дзвінок</h2>
+        <p class="contact-text">
+          Залишіть заявку та наш спеціаліст зв'яжеться з Вами!
+        </p>
+        <form name="modal-form" autocomplete="off" novalidate>
+          <div class="form-field">
+            <label class="form-label" for="form-label">Имя</label>
+            <input class="form-input" type="text" id="user-name" />
+          </div>
+
+          <div class="form-field">
+            <label class="form-label" for="user-tel">Телефон </label> <input
+            class="form-input"" type="tel" id="user-tel" />
+          </div>
+
+          <div class="form-field">
+            <label class="form-label" for="user-email">Почта</label>
+            <input class="form-input" type="email" id="user-email" />
+          </div>
+
+          <button class="form-button button" type="submit">
+            Замовити дзвінок
+          </button>
+          <p class="form-terms">
+            Натискаючи на кнопку я погоджуюсь з політикою конфіденційності
+            <a class="form-terms-link" href="#">Політикою конфіденційності</a>
+          </p>
+        </form>
       </div>
     </div>
     <script src="./modal.js"></script>

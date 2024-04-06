@@ -352,7 +352,9 @@ ul {
   display: flex;
   gap: 30px;
 }
-
+.contact-text {
+  margin-bottom: 30px;
+}
 .contact-section__map {
   flex-shrink: 0;
   border-radius: 16px;
@@ -447,9 +449,11 @@ ul {
   height: 100%;
   max-width: 880px;
   max-height: 880px;
+  padding: 128px;
   position: relative;
   background-color: var(--color-brand-light);
   border-radius: 32px;
+  overflow: auto;
 }
 .modal-btn-close {
   position: absolute;
@@ -461,4 +465,57 @@ ul {
   visibility: hidden;
   pointer-events: none;
 }
-/* git push origin master hello*/
+/*  */
+.form-field {
+  margin-bottom: 32px;
+  position: relative;
+}
+.form-field:focus-within .form-label {
+  transform: translate(-36px, -40px);
+  color: var(--color-primary-dark);
+}
+.form-label {
+  position: absolute;
+  top: 16px;
+  left: 42px;
+  font-size: 16px;
+  line-height: 1.17;
+  color: var(--color-secondary-dark);
+  transition: transform 0.3s;
+}
+
+.form-input {
+  width: 100%;
+  padding: 16px 42px;
+  border: 1px solid var(--color-secondary-dark);
+  border-radius: 9px;
+  background-color: transparent;
+}
+.form-input:focus {
+  border-color: var(--color-brand-normal);
+  outline: none;
+}
+
+.form-input::placeholder {
+  color: var(--color-secondary-dark);
+}
+
+.form-input::placeholder {
+  color: var(--color-primary-dark);
+}
+.form-button {
+  display: block;
+  margin: 0 auto 24px;
+}
+.form-terms {
+  margin: 0 auto;
+  max-width: 220px;
+  text-align: center;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.5;
+}
+.form-terms-link {
+  color: var(--color-primary-dark);
+  text-underline-offset: 2px;
+}
