@@ -1,0 +1,46 @@
+/*------------------------------fonts------------------*/
+
+@import "./utills/fonts.scss";
+@import "./utills/variables";
+@import "./base";
+
+@import "./utills/utills";
+.section {
+  padding: 48px 0;
+}
+.container {
+  width: 100%;
+  max-width: 1288px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+.accent {
+  color: var(--color-brand-normal);
+}
+/*----------------------button--------------------------------*/
+@import "./components/button";
+/*----------------------link----------------------------------*/
+@import "./components/links.scss";
+@import "./utills/mixin";
+/*----------------------header--------------------------------*/
+@import "./components/header.scss";
+
+/*--------------------hero-section--------------------------*/
+@import "./components/hero-section.scss";
+/*----------------------advantages-section--------------------*/
+@import "./components/advantages-section";
+/*----------------------Traditions----------------------------*/
+@import "./components/taditions";
+/*----------------------Chef-section--------------------------*/
+@import "./components/chef-section";
+/*----------------------Format-section------------------------*/
+@import "./components/format-section";
+/* -------------------------Carousel---------------------------*/
+@import "./components/carousel";
+/*----------------------Contacts-section----------------------*/
+
+@import "./components/contacts-section";
+/*----------------------Footer--------------------------------*/
+@import "./components/footer";
+/* -------------------- */
+@import "./components/backdrop";
