@@ -1,0 +1,42 @@
+.formats-container {
+  display: flex;
+  gap: 32px;
+  align-items: center;
+}
+
+.formats-title {
+  margin-bottom: 80px;
+}
+
+.format-title {
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.format-text {
+  font-size: 14px;
+  font-weight: 300;
+}
+
+.format-list {
+  display: flex;
+  gap: 20px;
+}
+
+.format-card {
+  height: 444px;
+  background-image: linear-gradient(180deg, rgba(49, 38, 26, 0) 55.21%, rgba(49, 38, 26, 0.71) 72.92%, var(--color-primary-dark));
+  border: 1px solid lightgrey;
+  /*background-image: url("../img/walrus-format.jpg");*/
+  border-radius: 16px;
+  padding: 24px;
+  transition: transform 0.5s;
+}
+
+.format-card:hover {
+  transform: scale(1.05);
+}
+
+.format-item {
+  flex-basis: calc((100% - 40px) / 3);
+}/*# sourceMappingURL=Format-section.css.map */
