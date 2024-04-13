@@ -348,20 +348,38 @@
         <p class="contact-text">
           Залишіть заявку та наш спеціаліст зв'яжеться з Вами!
         </p>
-        <form name="modal-form" autocomplete="off" novalidate>
+        <form name="modal-form" autocomplete="off">
           <div class="form-field">
-            <label class="form-label" for="form-label">Имя</label>
-            <input class="form-input" type="text" id="user-name" />
+            <label class="form-label visually-hidden" for="form-label"
+              >Имя</label
+            >
+            <input
+              class="form-input"
+              type="text"
+              id="user-name"
+              placeholder="Имя"
+              required
+              minlength="2" />
           </div>
 
           <div class="form-field">
-            <label class="form-label" for="user-tel">Телефон </label> <input
-            class="form-input"" type="tel" id="user-tel" />
-          </div>
+            <label class="form-label visually-hidden" for="user-tel"
+              >Телефон
+            </label>
+            <input class="form-input"" type="tel" id="user-tel"
+            placeholder="Телефон" required min="2" max="20" pattern="^\+[0-9]"/>
+          </div
 
           <div class="form-field">
-            <label class="form-label" for="user-email">Почта</label>
-            <input class="form-input" type="email" id="user-email" />
+            <label class="form-label visually-hidden" for="user-email"
+              >Почта</label
+            >
+            <input
+              class="form-input"
+              type="email"
+              id="user-email"
+              placeholder="Почта"
+              required />
           </div>
 
           <button class="form-button button" type="submit">
