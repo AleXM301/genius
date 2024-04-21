@@ -317,7 +317,7 @@
   display: flex;
   gap: 30px;
 }
-.contact-text {
+.contact-section__text {
   margin-bottom: 30px;
 }
 .contact-section__map {
