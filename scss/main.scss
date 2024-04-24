@@ -1,21 +1,20 @@
 /*------------------------------fonts------------------*/
-
 @import "./utills/fonts.scss";
 @import "./utills/variables";
 @import "./base";
 
 @import "./utills/utills";
 .section {
-  padding: 48px 0;
+    padding: 48px 0;
 }
 .container {
-  width: 100%;
-  max-width: 1288px;
-  margin: 0 auto;
-  padding: 0 24px;
+    width: 100%;
+    max-width: 1288px;
+    margin: 0 auto;
+    padding: 0 24px;
 }
 .accent {
-  color: var(--color-brand-normal);
+    color: var(--color-brand-normal);
 }
 @import "./components/section";
 @import "./components/button";
@@ -25,8 +24,9 @@
 @import "./utills/texts";
 @import "./layouts/header";
 
-@import "./layouts/hero-section.scss";
 @import "./layouts/advantages-section";
+@import "./layouts/hero-section.scss";
+@import "./components/backdrop";
 @import "./components/section";
 @import "./layouts/traditions-section";
 @import "./layouts/chefs-section";
@@ -38,4 +38,4 @@
 @import "./components/carousel";
 @import "./layouts/modal";
 @import "./layouts/footer";
-@import "./components/backdrop";
+@import "./layouts/mobile-menu";
